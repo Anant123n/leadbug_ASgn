@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 // Middleware
-app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5174', 'https://leadbug-a-sgn.vercel.app/api'], credentials: true }));
+app.use(cors()); // Allow all origins as requested
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
